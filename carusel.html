@@ -34,7 +34,7 @@
     ul {
       position: relative;
       left: 0;
-      transition: all 0.3s;
+      transition: left 0.5s;
       height: 130px;
       width: 9999px;
       margin: 0;
@@ -107,14 +107,12 @@
         nextButton = carousel.querySelector('#carousel #controls .next');
         
 
-    var numViewedElem = 4,                    // number elements in viewport
-        numScrollElem = 2,                    // number elements to scroll
+    var numViewedElem = 3,                    // number elements in viewport
+        numScrollElem = 3,                    // number elements to scroll
         elemWidth = li[0].offsetWidth,
         lastViewedElem = numViewedElem,
         deltaScrollWidth = 0,                 // carousel offset in "px"
-        totalElem = li.length,                // total elemets
-        curPos = 0,                           // position in "px"
-        curLi = numScrollElem;
+        totalElem = li.length;                // total elemets
 
     
     viewport.style.width = numViewedElem * elemWidth + "px";
